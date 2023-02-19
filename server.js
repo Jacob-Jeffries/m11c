@@ -15,5 +15,5 @@ app.use(express.static('public'));
 
 // Webserver listening on EXPRESS_PORT
 app.listen(EXPRESS_PORT, () =>
-console.log(`App listening at http://localhost:${EXPRESS_PORT}`);
+console.log(`App listening at http://localhost:${EXPRESS_PORT}`)
 );
