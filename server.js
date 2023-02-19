@@ -18,6 +18,11 @@ app.get('/', (req, res) =>
 );
 
 
+// Wildcard route to direct users to a 404 page
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/404.html'))
+);
+
 // Webserver listening on EXPRESS_PORT
 app.listen(EXPRESS_PORT, () =>
 console.log(`App listening at http://localhost:${EXPRESS_PORT}`)
