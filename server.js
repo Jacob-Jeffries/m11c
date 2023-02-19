@@ -1,5 +1,6 @@
 // Global Constants
 const express = require('express');
+const { join } = require('path');
 const path = require('path');
 const app = express();
 
@@ -17,6 +18,9 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
+app.get('/api/notes', (req,res) =>
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
 
 // Wildcard route to direct users to a 404 page
 app.get('*', (req, res) =>
