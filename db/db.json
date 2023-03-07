@@ -3,5 +3,15 @@
         "id": "b6ff9e14-e833-43ea-b20c-079245b6f9e2",
         "title": "Test Note",
         "text": "Hello World! This is a test note."
+    },
+    {
+        "id": "ef14552f-54ee-44a3-a299-6348d54fe45b",
+        "title": "Test Note 1",
+        "text": "Test note 1 - index 1"
+    },
+    {
+        "id": "757bf625-4c8e-4783-8b51-8b0ed95e28bc",
+        "title": "Test Note 2",
+        "text": "Position 2 in the array"
     }
 ]

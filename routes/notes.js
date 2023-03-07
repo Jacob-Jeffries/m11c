@@ -40,4 +40,25 @@ notes.post('/', (req, res) => {
   }
 });
 
+notes.delete('/:id', (req, res) => {
+  let id = req.params.id;
+
+  async function doh(id) {
+    let index;
+    const notes = await readFromFile('./db/db.json');
+
+    let notes_json = JSON.parse(notes);
+
+    for (let i=0; i < notes_json.length; i++) {
+      if(notes_json[i].id === id){
+        index = i;
+        console.log(index);
+        console.log(notes_json[index]);
+      }
+    }
+  }
+
+  doh(id)
+});
+
 module.exports = notes;
