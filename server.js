@@ -1,8 +1,8 @@
 // Global Constants
 const express = require('express');
+const app = express();
 const { join } = require('path');
 const path = require('path');
-const app = express();
 
 const EXPRESS_PORT = process.env.PORT || 3012;
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Import the API routes
 const api = require('./routes/index.js');
-app.use('/API', api);
+app.use('/api', api);
 
 // Static delivery of the public folder HTML
 app.use(express.static('./public/'));
