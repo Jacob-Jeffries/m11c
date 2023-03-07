@@ -11,8 +11,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Import the API routes
-const api = require('./routes/index.js');
-app.use('/api', api);
+const notes = require('./routes/notes');
+// For some reason I could not get the index.js file to work here ??
+app.use('/api', notes);
 
 // Static delivery of the public folder HTML
 app.use(express.static('./public/'));
@@ -22,8 +23,10 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-app.get('/notes', (req,res) =>
+app.get('/notes', (req,res) => {
+  console.log('notes page loaded');
   res.sendFile(path.join(__dirname, '/public/notes.html'))
+}
 );
 
 // Wildcard route to direct users to a 404 page
