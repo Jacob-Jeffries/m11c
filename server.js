@@ -10,6 +10,10 @@ const EXPRESS_PORT = process.env.PORT || 3012;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Import the API routes
+const api = require('./routes/index.js');
+app.use('/API', api);
+
 // Static delivery of the public folder HTML
 app.use(express.static('./public/'));
 
@@ -23,9 +27,9 @@ app.get('/notes', (req,res) =>
 );
 
 // Wildcard route to direct users to a 404 page
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/index.html'))
-);
+// app.get('/*', (req, res) =>
+//   res.sendFile(path.join(__dirname, 'public/index.html'))
+// );
 
 // Webserver listening on EXPRESS_PORT
 app.listen(EXPRESS_PORT, () =>
