@@ -28,7 +28,7 @@ notes.post('/', (req, res) => {
 
   if (req.body) {
     const newNote = {
-      note_id: uuidv4(),
+      id: uuidv4(),
       title,
       text,
     };
