@@ -23,7 +23,7 @@ app.get('/', (req, res) =>
 );
 
 app.get('/notes', (req,res) => {
-  console.log('notes page loaded');
+  console.log('Notes Page Loaded');
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 }
 );
