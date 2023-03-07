@@ -11,9 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Import the API routes
-const notes = require('./routes/notes');
-// For some reason I could not get the index.js file to work here ??
-app.use('/api', notes);
+const api = require('./routes/index');
+app.use('/api', api);
 
 // Static delivery of the public folder HTML
 app.use(express.static('./public/'));
@@ -24,7 +23,7 @@ app.get('/', (req, res) =>
 );
 
 app.get('/notes', (req,res) => {
-  console.log('notes page loaded');
+  console.log('Notes Page Loaded');
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 }
 );
