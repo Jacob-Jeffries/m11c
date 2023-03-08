@@ -12,10 +12,6 @@ notes.get('/', (req, res) => {
   // console.log("GET Test");
   // res.send("GET Test");
 
-  if(checkFile('./db/db.json')){
-    console.log(checkFile('./db/db.json'));
-  };
-  
   readFromFile('./db/db.json')
   // This reads the file into a string, we must parse it as JSON
   .then((data) => JSON.parse(data))

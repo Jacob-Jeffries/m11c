@@ -31,15 +31,4 @@ const readAndAppend = (content, file) => {
   });
 };
 
-function checkFile(file) {
-  fs.readFile(file, 'utf8', (err, data) => {
-    if (err) {
-      console.error(err);
-      return false;
-    } else {
-      return true;
-    }
-  })
-};
-
-module.exports = { readFromFile, writeToFile, readAndAppend, checkFile };
+module.exports = { readFromFile, writeToFile, readAndAppend };
