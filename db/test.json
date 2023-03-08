@@ -2,16 +2,19 @@
     {
         "id": "b6ff9e14-e833-43ea-b20c-079245b6f9e2",
         "title": "Test Note 0",
-        "text": "Test Note 0 - Index 0"
+        "text": "Test Note 0 - Index 0",
+        "display": true
     },
     {
         "id": "ef14552f-54ee-44a3-a299-6348d54fe45b",
         "title": "Test Note 1",
-        "text": "Test Note 1 - Index 1"
+        "text": "Test Note 1 - Index 1",
+        "display": true
     },
     {
         "id": "757bf625-4c8e-4783-8b51-8b0ed95e28bc",
         "title": "Test Note 2",
-        "text": "Test Note 2 - Index 2"
+        "text": "Test Note 2 - Index 2",
+        "display": true
     }
-]
+  ]
