@@ -4,6 +4,7 @@ const {
   readFromFile,
   readAndAppend,
   writeToFile,
+  checkFile,
 } = require('../helpers/fsUtils');
 
 // All of these routes will be under the /api/notes parent directory
@@ -11,6 +12,10 @@ notes.get('/', (req, res) => {
   // console.log("GET Test");
   // res.send("GET Test");
 
+  if(checkFile('./db/db.json')){
+    console.log(checkFile('./db/db.json'));
+  };
+  
   readFromFile('./db/db.json')
   // This reads the file into a string, we must parse it as JSON
   .then((data) => JSON.parse(data))
@@ -47,15 +52,22 @@ notes.delete('/:id', (req, res) => {
     let index;
     const notes = await readFromFile('./db/db.json');
 
+    console.log(notes)
+
+
     let notes_json = JSON.parse(notes);
 
     for (let i=0; i < notes_json.length; i++) {
       if(notes_json[i].id === id){
         index = i;
-        console.log(index);
-        console.log(notes_json[index]);
+        // console.log(index);
+        // console.log(notes_json[index]);
       }
     }
+    const data = notes_json.splice(index, 1);
+    console.log(notes_json);   
+    writeToFile('./db/db.json', notes_json);
+    res.redirect(req.originalUrl);
   }
 
   doh(id)
