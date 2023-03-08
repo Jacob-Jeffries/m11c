@@ -32,7 +32,7 @@ notes.post('/', (req, res) => {
       id: uuidv4(),
       title,
       text,
-    };
+    }
 
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully 🚀`);
@@ -42,7 +42,14 @@ notes.post('/', (req, res) => {
 });
 
 notes.delete('/:id', (req, res) => {
-
-});
+  readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      const filtered = json.filter((el) => el.id != req.params.id);
+      console.log(filtered);
+      writeToFile('./db/db.json', filtered);
+    });
+  }
+);
 
 module.exports = notes;

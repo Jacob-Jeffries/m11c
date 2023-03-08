@@ -28,10 +28,10 @@ app.get('/notes', (req,res) => {
 }
 );
 
-// Wildcard route to direct users to a 404 page
-// app.get('/*', (req, res) =>
-//   res.sendFile(path.join(__dirname, 'public/index.html'))
-// );
+//Wildcard route to direct users to a 404 page
+app.get('/*', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+);
 
 // Webserver listening on EXPRESS_PORT
 app.listen(EXPRESS_PORT, () =>
