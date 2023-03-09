@@ -1,17 +1,22 @@
 [
-  {
-      "id": "b6ff9e14-e833-43ea-b20c-079245b6f9e2",
-      "title": "Test Note 0",
-      "text": "Test Note 0 - Index 0"
-  },
-  {
-      "id": "ef14552f-54ee-44a3-a299-6348d54fe45b",
-      "title": "Test Note 1",
-      "text": "Test Note 1 - Index 1"
-  },
-  {
-      "id": "757bf625-4c8e-4783-8b51-8b0ed95e28bc",
-      "title": "Test Note 2",
-      "text": "Test Note 2 - Index 2"
-  }
+    {
+        "id": "b6ff9e14-e833-43ea-b20c-079245b6f9e2",
+        "title": "Test Note 0",
+        "text": "Test Note 0 - Index 0"
+    },
+    {
+        "id": "ef14552f-54ee-44a3-a299-6348d54fe45b",
+        "title": "Test Note 1",
+        "text": "Test Note 1 - Index 1"
+    },
+    {
+        "id": "757bf625-4c8e-4783-8b51-8b0ed95e28bc",
+        "title": "Test Note 2",
+        "text": "Test Note 2 - Index 2"
+    },
+    {
+        "id": "07a6ec2e-e16b-4af1-b781-0b282033b8f9",
+        "title": "Test Note 3",
+        "text": "Position 3 in the db array."
+    }
 ]
