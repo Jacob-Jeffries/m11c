@@ -41,6 +41,7 @@ notes.post('/', (req, res) => {
   }
 });
 
+// I had issues with this section
 notes.delete('/:id', (req, res) => {
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
