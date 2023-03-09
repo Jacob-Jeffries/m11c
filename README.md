@@ -2,7 +2,7 @@
 
 ## Description
 
-This web application allows a user to review notes and new ones to a dashboard.
+This web application allows a user to review notes and add new ones to a dashboard.
 
 ## Instalation
 
@@ -20,7 +20,7 @@ https://powerful-island-83683.herokuapp.com/
 
 ![Notes Page](./screenshots/note_1.png)
 
-* Click on the left hand colomn note to display its text.
+* Click on the left hand column note to display its text.
 
 ![Active Note](./screenshots/note_2.png)
 
@@ -28,14 +28,14 @@ https://powerful-island-83683.herokuapp.com/
 
 ![New Note](./screenshots/note_3.png)
 
-* To save the new note, click on the SAVE ICON that appears after filling in the note's body. It will then be rendered as one of the ntoes in the  left-hand column.
+* To save the new note, click on the SAVE ICON that appears after filling in the note's body. It will then be rendered as one of the notes in the  left-hand column.
 
 ![Saved Note](./screenshots/note_5.png)
 
 ## Credits
 
 Coded by Jacob Jeffries
-With started code provided by MSI Bootcamp
+With started code provided by MSU Bootcamp
 
 ## License
 
