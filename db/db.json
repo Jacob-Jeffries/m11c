@@ -15,8 +15,8 @@
         "text": "Test Note 2 - Index 2"
     },
     {
-        "id": "6f83d0f4-cf1b-4a99-ab56-a23fd1a8f6de",
+        "id": "07a6ec2e-e16b-4af1-b781-0b282033b8f9",
         "title": "Test Note 3",
-        "text": "Index 3 in the array."
+        "text": "Position 3 in the db array."
     }
 ]
