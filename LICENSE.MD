@@ -1,44 +1,3 @@
-# Note Tracker - Module 11 Challenge
-
-## Description
-
-This web application allows a user to review notes and new ones to a dashboard.
-
-## Instalation
-
-This app is a live application being served on Heroku, no installation is required.
-
-## Usage
-
-* Simply navigate to the Heroku page:
-
-https://powerful-island-83683.herokuapp.com/
-
-![Landing Page](./screenshots/landing.png)
-
-* Click on the GETTING STARTED button to navigate to the web application.
-
-![Notes Page](./screenshots/note_1.png)
-
-* Click on the left hand colomn note to display its text.
-
-![Active Note](./screenshots/note_2.png)
-
-* Click on the PLUS button to add a new note.
-
-![New Note](./screenshots/note_3.png)
-
-* To save the new note, click on the SAVE ICON that appears after filling in the note's body. It will then be rendered as one of the ntoes in the  left-hand column.
-
-![Saved Note](./screenshots/note_5.png)
-
-## Credits
-
-Coded by Jacob Jeffries
-With started code provided by MSI Bootcamp
-
-## License
-
 MIT License
 
 Copyright (c) [2023] [Jacob Jeffries]
@@ -60,6 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-
