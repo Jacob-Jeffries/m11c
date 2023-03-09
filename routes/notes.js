@@ -4,7 +4,6 @@ const {
   readFromFile,
   readAndAppend,
   writeToFile,
-  checkFile,
 } = require('../helpers/fsUtils');
 
 // All of these routes will be under the /api/notes parent directory
