@@ -18,5 +18,10 @@
         "id": "07a6ec2e-e16b-4af1-b781-0b282033b8f9",
         "title": "Test Note 3",
         "text": "Position 3 in the db array."
+    },
+    {
+        "id": "fc69c109-5c8b-4924-b0dd-28267c31a928",
+        "title": "Test Note 4",
+        "text": "Index 4 on the array."
     }
 ]
